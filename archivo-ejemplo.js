@@ -1,1 +1,1 @@
-console.log('hola :wave:');
+console.log('Hola, !');

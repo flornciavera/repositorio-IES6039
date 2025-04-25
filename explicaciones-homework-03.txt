@@ -1,0 +1,63 @@
+Explicaciones
+
+For:
+
+El ciclo "for" se usa para repetir un bloque de código un número específico de veces. Tiene tres partes:
+
+for (inicio; condición; incremento) {
+    // código a repetir
+}
+
+Por ejemplo:
+
+for (int i = 0; i < 5; i++) {
+    System.out.println(i);
+}
+
+Este ciclo:
+
+Empieza con i = 0
+
+Repite mientras i < 5 (es decir, mientras la condición sea verdadera)
+
+Suma 1 a i en cada vuelta (i++)
+
+Este tipo de estructura es útil cuando sabemos exactamente cuántas veces queremos repetir algo.
+
+&& (AND lógico):
+El operador && se llama "AND lógico". Sirve para combinar dos condiciones y solo da verdadero si ambas condiciones son verdaderas.
+
+Ejemplo:
+
+if (edad >= 13 && edad <= 17) {
+    System.out.println("Sos un adolescente.");
+}
+
+En este ejemplo, el mensaje solo se muestra si la persona tiene 13 años o más y 17 años o menos.
+
+
+|| (OR lógico):
+
+El operador || se llama "OR lógico". Da verdadero si al menos una de las condiciones es verdadera.
+
+Ejemplo:
+
+if (dia.equals("sábado") || dia.equals("domingo")) {
+    System.out.println("Es fin de semana.");
+}
+
+Acá, si el día es sábado o domingo, se cumple la condición.
+
+
+! (NOT lógico)
+El operador ! se llama "NOT lógico". Se usa para negar una condición. Si algo es verdadero, ! lo convierte en falso, y viceversa.
+
+Ejemplo:
+
+boolean tieneTarea = false;
+
+if (!tieneTarea) {
+    System.out.println("Podés salir a jugar.");
+}
+
+En este caso, !tieneTarea es verdadero porque tieneTarea es falso.

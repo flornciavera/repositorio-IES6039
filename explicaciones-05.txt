@@ -1,0 +1,75 @@
+EXPLICACIONES
+
+1. OBJETOS:
+Imaginá que un objeto es como una mochila. Dentro de esa mochila podés guardar muchas cosas diferentes: lápices, cuadernos, una botella de agua, etc.
+En programación, un objeto es como esa mochila: tiene cosas adentro, que pueden ser datos o funciones. Por ejemplo, un objeto llamado "perro" puede tener cosas como: nombre, color, ladrar.
+
+let perro = {
+  nombre: "Toby",
+  color: "marrón",
+  ladrar: function() {
+    console.log("¡Guau!");
+  }
+};
+
+
+2. PROPIEDADES:
+Las propiedades son como las etiquetas de las cosas que están dentro de la mochila (objeto).
+Por ejemplo, si el objeto es un auto, las propiedades pueden ser "color", "marca", "modelo". Son como las características del objeto.
+
+let auto = {
+  color: "rojo",
+  marca: "Toyota",
+  modelo: 2020
+};
+
+Acá, color, marca y modelo son propiedades del auto.
+
+3. METODOS:
+Un método es algo que el objeto puede hacer. Son como mini-máquinas dentro del objeto que hacen acciones.
+Por ejemplo, si tenés un objeto "robot", un método puede ser "caminar", "hablar", "saltar".
+
+let robot = {
+  nombre: "Robo",
+  hablar: function() {
+    console.log("Hola, soy Robo");
+  }
+};
+
+Acá, hablar es un método porque hace algo: imprime un mensaje.
+
+4. BUCLE FOR...IN:
+Este bucle sirve para recorrer todas las cosas dentro de un objeto, como si abrieras la mochila y miraras cada cosa una por una.
+Es útil para ver todas las propiedades que tiene un objeto.
+
+let persona = {
+  nombre: "Luna",
+  edad: 12,
+  ciudad: "Buenos Aires"
+};
+
+for (let clave in persona) {
+  console.log(clave + ": " + persona[clave]);
+}
+
+Este código muestra:
+nombre: Luna  
+edad: 12  
+ciudad: Buenos Aires  
+
+
+5. NOTACION DE PUNTOS VS NOTACION DE CORCHETES:
+Estas son dos formas de decirle a la compu que querés acceder a una propiedad de un objeto.
+
+Notación de puntos: es como decir “quiero ver el nombre del perro” así: perro.nombre
+
+Notación de corchetes: es como decir lo mismo pero con comillas y corchetes: perro["nombre"]
+
+Ambas sirven, pero los corchetes se usan cuando el nombre de la propiedad está guardado en una variable o tiene espacios.
+
+let persona = {
+  "nombre completo": "Valentina"
+};
+
+console.log(persona["nombre completo"]); // Esto funciona
+// console.log(persona.nombre completo);  // ¡Esto da error!
